@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet' media="screen">
+    <meta name="description" content="Web-App til at skrive notater.">
+    <title>Notater</title>
+</head>
+<body>
+    <body>
+        <div class="container">
+            <h1>Notater</h1>
+            <div class="note-input">
+                <textarea placeholder="Skriv din notat her..."></textarea>
+                <button onclick="addNote()">Tilføj Notat</button>
+            </div>
+            <div class="search-container">
+                <img class="searchicon" src="search.svg" alt="search-icon">
+                <input type="text" id="search" placeholder="Søg i notater..." oninput="searchNotes()">
+            </div>
+            <div class="notes-grid"></div>
+        </div>
+</body>
+</html>
